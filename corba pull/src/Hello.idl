@@ -1,0 +1,6 @@
+interface Hello
+{
+ string SayHello();
+};
+
+

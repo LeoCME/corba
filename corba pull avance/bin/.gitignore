@@ -1,0 +1,15 @@
+/.DS_Store
+/Client.class
+/Hello.class
+/HelloHelper.class
+/HelloHolder.class
+/HelloOperations.class
+/HelloPOA.class
+/Hello_impl.class
+/Server.class
+/_HelloStub.class
+/connection.idl
+/dialogue/
+/dialogue.idl
+/dialogueApp/
+/orb.db/

@@ -1,0 +1,9 @@
+#include<dialogue.idl>
+
+module Dialogue {
+interface Connection
+{
+ Dialogue connect(in string pseudo);
+ void disconnect (in string pseudo) raises(notExistingPseudo);
+};
+};

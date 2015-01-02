@@ -1,0 +1,27 @@
+module dialogue {
+typedef sequence<string> clients;
+typedef sequence<string> messages;
+
+exception notExistingPseudo { string detail; };
+
+interface Dialogue
+{
+
+
+ clients getClients();
+ void sendMessage (in string to,in string message) raises(notExistingPseudo);
+ messages getMessage();
+
+};
+
+
+
+interface Connection
+{
+ 
+ 
+ Dialogue connect(in string pseudo);
+ void disconnect (in string pseudo) raises(notExistingPseudo);
+};
+};
+
